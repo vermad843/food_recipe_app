@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
 
-function Header() {
+
+const Header = () => {
     return (
-        <div>
-            <h1>Food Recipe App</h1>
+        <div className = "jumbotron">
+            <h1 className = "display-1">
+              <i className="material-icons brand-icon">
+                 fastfood
+              </i>
+                 Food Recipe 
+            </h1>
         </div>
     )
 }
