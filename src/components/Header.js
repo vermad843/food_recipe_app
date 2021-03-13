@@ -5,9 +5,12 @@ const Header = () => {
     return (
         <div className = "jumbotron">
             <h1 className = "display-1">
-              <i className="material-icons brand-icon">
-                 fastfood
-              </i>
+                 <i 
+                    className="material-icons"
+                    style = {{fontSize : "100px"}}
+                    >
+                    fastfood
+                 </i>
                  Food Recipe 
             </h1>
         </div>
@@ -15,3 +18,5 @@ const Header = () => {
 }
 
 export default Header;
+
+
