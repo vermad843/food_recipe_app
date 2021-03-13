@@ -1,6 +1,7 @@
 import React from 'react';
 
 
+
 const Header = () => {
     return (
         <div className = "jumbotron">
@@ -13,6 +14,18 @@ const Header = () => {
                  </i>
                  Food Recipe 
             </h1>
+            <div className="input-group w-50 mx-auto">
+            <input
+               type="text" 
+               className="form-control" 
+              />
+             <div className = "input-group-append">
+            <span 
+               className="input-group-text" 
+               >Search
+            </span>
+            </div>
+           </div>
         </div>
     )
 }
