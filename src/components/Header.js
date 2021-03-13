@@ -1,8 +1,7 @@
 import React from 'react';
 
-
-
-const Header = () => {
+const Header = (props) => {
+   const {search, onInputChange} = props; 
     return (
         <div className = "jumbotron">
             <h1 className = "display-1">
@@ -17,13 +16,16 @@ const Header = () => {
             <div className="input-group w-50 mx-auto">
             <input
                type="text" 
-               className="form-control" 
+               className="form-control"
+               placeholder = "Search Your Recipe..."
+               value = {search} 
+               onChange = {onInputChange}
               />
              <div className = "input-group-append">
-            <span 
-               className="input-group-text" 
-               >Search
-            </span>
+              <button 
+                 className="btn btn-dark" 
+               >Search Recipe
+              </button>
             </div>
            </div>
         </div>
