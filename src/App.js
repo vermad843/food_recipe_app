@@ -5,16 +5,17 @@ import Recipes from './components/Recipes';
 import axios from 'axios';
 
 function App() {
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState("chicken");
   const [recipes, setRecipes] = useState([]);
 
   const APP_ID = "0c615612";
   const APP_KEY = "3fd964336e67887935c62858ceb1c1d4";
   
   useEffect(async() => {
-     const data = await axios.get(`https://api.edamam.com/search?q=chicken&app_id=${APP_ID}&app_key=${APP_KEY}`);
-     console.log(data);
-  });
+     const res = await axios.get(`https://api.edamam.com/search?q=${search}&app_id=${APP_ID}&app_key=${APP_KEY}`);
+     console.log(res);
+     setRecipes(res.data.hits);
+  },[]);
 
   const onInputChange = (e) => {
      setSearch(e.target.value);
