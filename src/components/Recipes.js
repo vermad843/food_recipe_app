@@ -4,10 +4,11 @@ import RecipeItem from './RecipeItem';
 const Recipes = (props) => {
     const {recipes} = props;
     return (
-        <div className = "row">
+        <div className = "card-columns p-5 ">
            {
              recipes.map(recipe => (
-              <RecipeItem 
+              <RecipeItem
+                 key = {Math.random() * 100} 
                  name = {recipe.recipe.label}
                  image = {recipe.recipe.image} 
                  ingredientLines = {recipe.recipe.ingredientLines}      
