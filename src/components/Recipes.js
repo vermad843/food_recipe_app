@@ -1,9 +1,20 @@
 import React from 'react';
 
-function Recipes() {
+const Recipes = (props) => {
+    const {recipes} = props;
     return (
-        <div>
-           <h1>Recipes</h1>       
+        <div className = "row">
+           {
+               recipes.map(recipe => (
+                   <div className = "col-md-3">
+                      <div className = "card">
+                         <div className = "card-body">
+                             <h4>{recipe.recipe.label}</h4>
+                         </div>
+                      </div>
+                   </div>
+               ))
+           }
         </div>
     )
 }
