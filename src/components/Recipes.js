@@ -6,10 +6,14 @@ const Recipes = (props) => {
         <div className = "row">
            {
                recipes.map(recipe => (
-                   <div className = "col-md-3">
+                   <div className = "col-md-3 p-5">
                       <div className = "card">
+                         <img 
+                           src = {recipe.recipe.image}
+                           className = "img-fluid w-100 mx-auto rounded-circle"    
+                           />
                          <div className = "card-body">
-                             <h4>{recipe.recipe.label}</h4>
+                             <h5>{recipe.recipe.label}</h5>
                          </div>
                       </div>
                    </div>
