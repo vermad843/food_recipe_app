@@ -13,7 +13,7 @@ function App() {
   
   useEffect(() => {
      getRecipes();
-  },[]);
+  });
 
   const getRecipes = async () => {
     const res = await axios.get(`https://api.edamam.com/search?q=${search}&app_id=${APP_ID}&app_key=${APP_KEY}`);

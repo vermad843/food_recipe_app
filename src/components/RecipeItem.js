@@ -6,7 +6,8 @@ const RecipeItem = (props) => {
         <div className = "card py-2 text-center">
            <img 
              src = {image}
-             className = "img-fluid w-50 mx-auto rounded-circle"    
+             className = "img-fluid w-50 mx-auto rounded-circle"  
+             alt = "rounded"  
              />
            <div className = "card-body">
                <h5>{name}</h5>
