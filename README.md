@@ -1,3 +1,5 @@
+[x] deployed - https://admiring-johnson-f877fe.netlify.app/
+
 [x] Icons Material-Design :
 
 [x] <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
